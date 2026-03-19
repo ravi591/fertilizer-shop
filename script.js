@@ -11,7 +11,7 @@ Product: ${productName}
 
 कृपया माहिती द्या.`;
 
-  let phoneNumber = "91XXXXXXXXXX"; // YOUR NUMBER
+  let phoneNumber = "918830265249"; // YOUR NUMBER
 
   let url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
 
