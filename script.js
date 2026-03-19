@@ -1,27 +1,19 @@
-body {
-  font-family: Arial;
-  text-align: center;
-  background: #f5fff5;
-}
+function orderNow(productName) {
 
-.products {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 20px;
-}
+  let message = `नमस्कार 🙏
+मला खालील प्रॉडक्ट पाहिजे:
 
-.product {
-  border: 1px solid #ddd;
-  padding: 15px;
-  background: white;
-  border-radius: 10px;
-}
+Product: ${productName}
 
-button {
-  background: green;
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
+नाव:
+गाव:
+मोबाईल:
+
+कृपया माहिती द्या.`;
+
+  let phoneNumber = "91XXXXXXXXXX"; // YOUR NUMBER
+
+  let url = "https://wa.me/" + phoneNumber + "?text=" + encodeURIComponent(message);
+
+  window.open(url, '_blank');
 }
